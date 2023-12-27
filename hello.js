@@ -54,13 +54,30 @@
 // }
 
 
-const numRowsInverted = 5;
+// const numRowsInverted = 5;
 
-for (let i = numRowsInverted; i >= 1; i--){
-    let row = "";
+// for (let i = numRowsInverted; i >= 1; i--){
+//     let row = "";
+
+//     for (let j = 1; j <= i; j++){
+//         row += "* ";
+//     }
+
+//     console.log(row);
+// }
+
+
+const numRowsPyramid = 5;
+
+for (let i = 1; i <= numRowsPyramid; i++){
+    let row = " ".repeat(numRowsPyramid - i);
 
     for (let j = 1; j <= i; j++){
-        row += "* ";
+        row += "*";
+    }
+
+    for (let k = i - 1; k >= 1; k--){
+        row += "*";
     }
 
     console.log(row);
