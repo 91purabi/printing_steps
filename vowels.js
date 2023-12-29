@@ -117,7 +117,6 @@
     return vowelChars.join('') === reversedVowels.join('');
   }
   
-  // Example usage:
   const inputString = "level";
   const isPalindrome = isVowelPalindrome(inputString);
   console.log(`Is "${inputString}" a vowel palindrome? ${isPalindrome}`);
